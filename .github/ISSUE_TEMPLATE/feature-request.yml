@@ -1,0 +1,20 @@
+name: Feature request
+description: Request a new feature
+title: "[Feature]: "
+labels: [enhancement]
+assignees:
+  - poulpy2k
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your taking some of your time to fill in this request!
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: What is the feature content ?
+      description: Please describe the feature you are requesting in detail
+      placeholder: Describe your feature...
+    validations:
+      required: true

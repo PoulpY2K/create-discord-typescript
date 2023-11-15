@@ -3,20 +3,20 @@
         CREATE DISCORD
     </h1>
   <p align="center">
-        <a href="https://github.com/PoulpY2K/create-discord-typescript/graphs/contributors"
-          ><img
-            src="https://img.shields.io/github/contributors/PoulpY2K/create-discord-typescript"
-            alt="Contributors"
+        <a href="https://github.com/poulpy2k/create-discord-typescript/actions"
+        ><img
+        src="https://github.com/poulpy2k/create-discord-typescript/workflows/Publish to NPM/badge.svg"
+        alt="Build status"
         /></a>
-        <a href="https://github.com/PoulpY2K/create-discord-typescript/network/members"
+        <a href="https://www.npmjs.com/package/create-discord-typescript"
           ><img
-            src="https://img.shields.io/github/forks/PoulpY2K/create-discord-typescript"
-            alt="Forks"
+            src="https://img.shields.io/npm/v/create-discord-typescript.svg?maxAge=3600"
+            alt="NPM version"
         /></a>
-        <a href="https://github.com/PoulpY2K/create-discord-typescript/stargazers"
+        <a href="https://www.npmjs.com/package/create-discord-typescript"
           ><img
-            src="https://img.shields.io/github/stars/PoulpY2K/create-discord-typescript"
-            alt="Stars"
+            src="https://img.shields.io/npm/dt/create-discord-typescript.svg?maxAge=3600"
+            alt="NPM downloads"
         /></a>
         <a href="https://github.com/PoulpY2K/create-discord-typescript/issues"
           ><img
@@ -81,6 +81,7 @@ create-discord-typescript
 |-------------------------------------------------------------------------------------------------------|
 | [1-starter](https://github.com/PoulpY2K/discordx-bot-templates/tree/main/1-starter)                   |
 | [2-starter-with-orm](https://github.com/PoulpY2K/discordx-bot-templates/tree/main/2-starter-with-orm) |
+
 
 Templates can be found in this repository: [discordx-bot-templates](https://github.com/PoulpY2K/discordx-bot-templates)
 

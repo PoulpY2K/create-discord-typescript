@@ -19,3 +19,9 @@ npm run build
 npm i -g .
 create-discord-typescript
 ```
+
+# Code of Conduct
+
+You need to follow the [Code of Conduct](./CODE_OF_CONDUCT.md) if you want to contribute to this project.
+
+# Please respect the [commit message convention](./COMMIT_CONVENTION.md)
