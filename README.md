@@ -1,4 +1,7 @@
 <div>
+    <h1 align="center">
+        CREATE DISCORD
+    </h1>
   <p align="center">
         <a href="https://github.com/PoulpY2K/discordx-prisma-ts/graphs/contributors"
           ><img
@@ -54,14 +57,15 @@ npx create-discord-typescript
 # 🏗 Installation
 
 ## 🌐 Global install
+
 Open a terminal and type one of these commands, depending on which package manager you use:
 
 ```SH
-yarn global add compiiile # install globally with yarn
+yarn global add create-discord-typescript # install globally with yarn
 ```
 
 ```SH
-npm install -g compiiile # install globally with npm
+npm install -g create-discord-typescript # install globally with npm
 ```
 
 Then, you just have to type the following command in order to use the CLI :
@@ -72,10 +76,10 @@ create-discord-typescript
 
 # 🗂 Templates
 
-| Template                                   |
-|--------------------------------------------|
-| [1-starter](./1-starter)                   |
-| [2-starter-with-orm](./2-starter-with-orm) |
+| Template                                                                                              |
+|-------------------------------------------------------------------------------------------------------|
+| [1-starter](https://github.com/PoulpY2K/discordx-bot-templates/tree/main/1-starter)                   |
+| [2-starter-with-orm](https://github.com/PoulpY2K/discordx-bot-templates/tree/main/2-starter-with-orm) |
 
 Templates can be found in this repository: [discordx-bot-templates](https://github.com/PoulpY2K/discordx-bot-templates)
 
