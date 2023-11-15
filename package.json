@@ -1,6 +1,6 @@
 {
   "name": "create-discord-typescript",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool for generating a simple discord bot project in typescript, with or without DB ORM",
   "keywords": [
     "discord.js",
