@@ -6,7 +6,6 @@ import prompts from "prompts";
 export enum PackageManager {
     npm,
     yarn,
-    pnpm,
     none,
 }
 
@@ -21,10 +20,6 @@ export async function GetPackageManager(): Promise<PackageManager | null> {
                 {
                     title: "yarn",
                     value: PackageManager.yarn.toString(),
-                },
-                {
-                    title: "pnpm",
-                    value: PackageManager.pnpm.toString(),
                 },
                 {
                     title: "none - do not install packages",
@@ -56,10 +51,6 @@ export async function GetPackageManager(): Promise<PackageManager | null> {
             case PackageManager.yarn:
                 execSync("yarn --version", {stdio: "ignore"});
                 break;
-
-            case PackageManager.pnpm:
-                execSync("pnpm --version", {stdio: "ignore"});
-                break;
         }
     } catch (err) {
         console.log(
@@ -67,11 +58,9 @@ export async function GetPackageManager(): Promise<PackageManager | null> {
             `Could not found ${chalk.greenBright(
                 PackageManager[manager],
             )} package manager, Please install it from:`,
-            PackageManager.pnpm === manager
-                ? "https://pnpm.io"
-                : PackageManager.yarn === manager
-                    ? "https://yarnpkg.com"
-                    : "https://nodejs.org/en/download",
+            PackageManager.yarn === manager
+                ? "https://yarnpkg.com"
+                : "https://nodejs.org/en/download",
         );
 
         return GetPackageManager();
@@ -119,16 +108,6 @@ export async function InstallPackage(
                     });
                 });
                 break;
-
-            case PackageManager.pnpm:
-                await new Promise((resolve, reject) => {
-                    exec("pnpm install", {cwd: root}, (err) => {
-                        if (err) {
-                            reject(err);
-                        }
-                        resolve(true);
-                    });
-                });
         }
 
         spinner.succeed(chalk.bold("Installed packages"));

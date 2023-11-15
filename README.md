@@ -98,4 +98,4 @@ This project is licensed under the terms of the ISC License - see the [LICENSE.m
 
 # ☎️ Need more infos?
 
-#### Jérémy Laurent - [@PoulpY2K](https://twitter.com/PoulpY2K) - [My Discord](https://discordapp.com/users/153168748461686785) - contact@jeremy-laurent.com
+ Jérémy Laurent - [@PoulpY2K](https://twitter.com/PoulpY2K) - [My Discord](https://discordapp.com/users/153168748461686785) - contact@jeremy-laurent.com

@@ -3,7 +3,7 @@
 import chalk from "chalk";
 import path from "node:path";
 import prompts from "prompts";
-import {ValidateNpmName} from "./module/npm.js";
+import {ValidateNpmName} from "./module/name";
 import {GetPackageManager, InstallPackage, PackageManager} from "./module/dependencies.js";
 import {DownloadAndExtractTemplate, GetStarters} from "./module/starter";
 import {IsFolderEmpty, MakeDir} from "./module/directory.js";
@@ -99,7 +99,7 @@ try {
 }
 
 /**
- * Make sure directory is clean
+ * Check if directory is clean
  */
 
 if (!IsFolderEmpty(resolvedProjectPath, projectName)) {
