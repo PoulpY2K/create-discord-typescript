@@ -3,29 +3,29 @@
         CREATE DISCORD
     </h1>
   <p align="center">
-        <a href="https://github.com/PoulpY2K/discordx-prisma-ts/graphs/contributors"
+        <a href="https://github.com/PoulpY2K/create-discord-typescript/graphs/contributors"
           ><img
-            src="https://img.shields.io/github/contributors/PoulpY2K/discordx-prisma-ts"
+            src="https://img.shields.io/github/contributors/PoulpY2K/create-discord-typescript"
             alt="Contributors"
         /></a>
-        <a href="https://github.com/PoulpY2K/discordx-prisma-ts/network/members"
+        <a href="https://github.com/PoulpY2K/create-discord-typescript/network/members"
           ><img
-            src="https://img.shields.io/github/forks/PoulpY2K/discordx-prisma-ts"
+            src="https://img.shields.io/github/forks/PoulpY2K/create-discord-typescript"
             alt="Forks"
         /></a>
-        <a href="https://github.com/PoulpY2K/discordx-prisma-ts/stargazers"
+        <a href="https://github.com/PoulpY2K/create-discord-typescript/stargazers"
           ><img
-            src="https://img.shields.io/github/stars/PoulpY2K/discordx-prisma-ts"
+            src="https://img.shields.io/github/stars/PoulpY2K/create-discord-typescript"
             alt="Stars"
         /></a>
-        <a href="https://github.com/PoulpY2K/discordx-prisma-ts/issues"
+        <a href="https://github.com/PoulpY2K/create-discord-typescript/issues"
           ><img
-            src="https://img.shields.io/github/issues/PoulpY2K/discordx-prisma-ts"
+            src="https://img.shields.io/github/issues/PoulpY2K/create-discord-typescript"
             alt="Issues"
         /></a>
-        <a href="https://github.com/PoulpY2K/discordx-prisma-ts/blob/main/LICENSE.txt"
+        <a href="https://github.com/PoulpY2K/create-discord-typescript/blob/main/LICENSE.md"
           ><img
-            src="https://img.shields.io/github/license/PoulpY2K/discordx-prisma-ts"
+            src="https://img.shields.io/github/license/PoulpY2K/create-discord-typescript"
             alt="License"
         /></a>
        <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-laurent-0986981b8/"
@@ -43,7 +43,7 @@
 
 # 📖 Introduction
 
-Create discordx bot in typescript with one command. This module is greatly inspired by [create-discordx](https://github.com/discordx-ts/discordx/tree/main/packages/create-discordx#readme).
+Create a discord bot in typescript with one command. This module is greatly inspired by [create-discordx](https://github.com/discordx-ts/discordx/tree/main/packages/create-discordx#readme).
 
 It is mostly a personalized version of their CLI with some additional features like ORM implementations and such.
 

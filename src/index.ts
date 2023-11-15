@@ -10,6 +10,7 @@ import {IsFolderEmpty, MakeDir} from "./module/directory.js";
 import ora from "ora";
 import {execSync} from "child_process";
 import {TryGitInit} from "./module/version-control";
+import {default as version} from "./module/update.js";
 
 console.log(`
    ██████╗██████╗ ███████╗ █████╗ ████████╗███████╗    ██████╗ ██╗███████╗ ██████╗ ██████╗ ██████╗ ██████╗ 
@@ -18,7 +19,7 @@ console.log(`
   ██║     ██╔══██╗██╔══╝  ██╔══██║   ██║   ██╔══╝      ██║  ██║██║╚════██║██║     ██║   ██║██╔══██╗██║  ██║
   ╚██████╗██║  ██║███████╗██║  ██║   ██║   ███████╗    ██████╔╝██║███████║╚██████╗╚██████╔╝██║  ██║██████╔╝
    ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝    ╚═════╝ ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ 
-  ${chalk.dim(`v0.0.1`)}
+  ${chalk.dim(`v${version}`)}
 `);
 
 let projectPath = "./";

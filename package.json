@@ -1,6 +1,6 @@
 {
   "name": "create-discord-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool for generating a simple discord bot project in typescript, with or without DB ORM",
   "keywords": [
     "discord.js",
@@ -16,14 +16,14 @@
     "typescript",
     "ts"
   ],
-  "homepage": "https://github.com/PoulpY2K/mds-open-source-2023-projects.git",
+  "homepage": "https://github.com/PoulpY2K/create-discord-typescript.git",
   "bugs": {
-    "url": "https://github.com/AlbanCrepel/mds-open-source-2023-projects/issues",
+    "url": "https://github.com/PoulpY2K/create-discord-typescript/issues",
     "email": "contact@jeremy-laurent.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PoulpY2K/mds-open-source-2023-projects.git"
+    "url": "https://github.com/PoulpY2K/create-discord-typescript.git"
   },
   "license": "ISC",
   "author": "Jérémy Laurent <contact@jeremy-laurent.com> (https://github.com/poulpy2k)",
@@ -52,13 +52,16 @@
   },
   "dependencies": {
     "axios": "^1.6.2",
+    "boxen": "^7.1.1",
     "chalk": "^5.3.0",
     "figlet": "^1.7.0",
+    "is-installed-globally": "^1.0.0",
     "ora": "^7.0.1",
     "prompts": "^2.4.2",
     "rimraf": "^5.0.5",
     "tar": "^6.2.0",
     "typescript": "^5.2.2",
+    "update-check": "^1.5.4",
     "validate-npm-package-name": "^5.0.0",
     "yargs": "^17.7.2"
   },
