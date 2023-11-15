@@ -1,17 +1,17 @@
 import axios from "axios";
-import { createWriteStream, promises as fs } from "fs";
-import { tmpdir } from "os";
-import { join } from "path";
-import { Readable, Stream } from "stream";
+import {createWriteStream, promises as fs} from "fs";
+import {tmpdir} from "os";
+import {join} from "path";
+import {Readable, Stream} from "stream";
 import tar from "tar";
-import { promisify } from "util";
+import {promisify} from "util";
 
 /**
  * Get templates list from https://github.com/discordx-ts/templates
  *
  * @returns
  */
-export async function GetTemplates(): Promise<
+export async function GetStarters(): Promise<
     { title: string; value: string }[]
 > {
     const response = await axios
@@ -21,26 +21,9 @@ export async function GetTemplates(): Promise<
         .then((res) =>
             res.data
                 .filter((row) => row.type === "dir" && /^[0-9].+/.test(row.name))
-                .map((row) => ({ title: row.name, value: row.path })),
+                .map((row) => ({title: row.name, value: row.path})),
         )
         .catch(() => []);
-
-    return response;
-}
-
-/**
- * Check if the template exists on GitHub
- *
- * @param name template name
- * @returns
- */
-export async function IsTemplateExist(name: string): Promise<boolean> {
-    const response = await axios
-        .get(
-            `https://api.github.com/repos/poulpy2k/discordx-bot-templates/contents/${name}?ref=main`,
-        )
-        .then(() => true)
-        .catch(() => false);
 
     return response;
 }

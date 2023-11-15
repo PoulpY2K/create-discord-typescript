@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
 import chalk from "chalk";
-//import boxen from "boxen";
 import path from "node:path";
 import prompts from "prompts";
 import {ValidateNpmName} from "./module/npm.js";
 import {GetPackageManager, InstallPackage, PackageManager} from "./module/dependencies.js";
-import {DownloadAndExtractTemplate, GetTemplates} from "./module/template.js";
+import {DownloadAndExtractTemplate, GetStarters} from "./module/starter";
 import {IsFolderEmpty, MakeDir} from "./module/directory.js";
 import ora from "ora";
 import {execSync} from "child_process";
@@ -67,18 +66,18 @@ if (packageManager === null) {
  * Select template prompt
  */
 
-const templateList = await GetTemplates();
+const starterList = await GetStarters();
 
-if (!templateList.length) {
-    console.log(chalk.red("> Unable to load templates :("));
+if (!starterList.length) {
+    console.log(chalk.red("> Unable to load starters :("));
     process.exit();
 }
 
 const response = await prompts<string>(
     {
-        choices: templateList,
-        message: "Pick template",
-        name: "template",
+        choices: starterList,
+        message: "Pick starter",
+        name: "starter",
         type: "select",
     },
     {
@@ -108,14 +107,14 @@ if (!IsFolderEmpty(resolvedProjectPath, projectName)) {
 }
 
 const spinner = ora({
-    text: chalk.bold("Downloading template..."),
+    text: chalk.bold("Downloading starter..."),
 }).start();
 
 try {
-    await DownloadAndExtractTemplate(resolvedProjectPath, response.template);
-    spinner.succeed(chalk.bold("Downloaded template"));
+    await DownloadAndExtractTemplate(resolvedProjectPath, response.starter);
+    spinner.succeed(chalk.bold("Downloaded starter"));
 } catch (err) {
-    spinner.fail(chalk.bold("Failed to download selected template :("));
+    spinner.fail(chalk.bold("Failed to download selected starter :("));
     process.exit();
 }
 
@@ -154,7 +153,7 @@ const isWin = process.platform === "win32";
 
 console.log(
     chalk.greenBright("√"),
-    chalk.bold("Created discordx project"),
+    chalk.bold("Created discord typescript project"),
     chalk.gray("»"),
     chalk.greenBright(projectName),
 );
@@ -191,6 +190,3 @@ console.log(
     chalk.bold("Thank you for using my CLI"),
     chalk.red(" ❤️"),
 );
-console.log(
-    chalk.bold("Consider showing a lot of love to Discordx for their awesome project")
-)

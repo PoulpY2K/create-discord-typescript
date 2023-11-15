@@ -43,8 +43,9 @@
 
 # 📖 Introduction
 
-This module is greatly inspired by [Discordx](https://github.com/discordx-ts/discordx/), it is mostly a personalized
-version of their CLI with some additional features like ORM implementations and such.
+Create discordx bot in typescript with one command. This module is greatly inspired by [create-discordx](https://github.com/discordx-ts/discordx/tree/main/packages/create-discordx#readme).
+
+It is mostly a personalized version of their CLI with some additional features like ORM implementations and such.
 
 # 💻 Quick start
 
